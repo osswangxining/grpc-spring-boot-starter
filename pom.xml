@@ -42,5 +42,6 @@
 	<modules>
 		<module>grpc-spring-boot-starter</module>
 		<module>grpc-spring-boot-starter-sample</module>
+		<module>grpc-spring-boot-starter-sample-client</module>
 	</modules>
 </project>
