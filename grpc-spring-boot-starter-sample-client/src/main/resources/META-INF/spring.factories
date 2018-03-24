@@ -1,2 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=osswangxining.github.io.grpc.autoconfigure.GRpcAutoConfigure
-org.springframework.context.ApplicationContextInitializer=osswangxining.github.io.grpc.context.GRpcServerPortInfoApplicationContextInitializer
