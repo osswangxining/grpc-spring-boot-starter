@@ -33,34 +33,16 @@
 		  <groupId>io.grpc</groupId>
 		  <artifactId>grpc-netty</artifactId>
 		  <version>1.10.0</version>
-		  <exclusions>
-		  	<exclusion>
-		  		<groupId>com.google.guava</groupId>
-		  		<artifactId>guava</artifactId>
-		  	</exclusion>
-		  </exclusions>
 		</dependency>
 		<dependency>
           <groupId>io.grpc</groupId>
           <artifactId>grpc-services</artifactId>
           <version>1.10.0</version>
-          <exclusions>
-          	<exclusion>
-          		<groupId>com.google.guava</groupId>
-          		<artifactId>guava</artifactId>
-          	</exclusion>
-          </exclusions>
 		</dependency>
 		<dependency>
 		  <groupId>io.grpc</groupId>
 		  <artifactId>grpc-protobuf</artifactId>
 		  <version>1.10.0</version>
-		  <exclusions>
-		  	<exclusion>
-		  		<groupId>com.google.guava</groupId>
-		  		<artifactId>guava</artifactId>
-		  	</exclusion>
-		  </exclusions>
 		</dependency>
 		<dependency>
 		  <groupId>io.grpc</groupId>
