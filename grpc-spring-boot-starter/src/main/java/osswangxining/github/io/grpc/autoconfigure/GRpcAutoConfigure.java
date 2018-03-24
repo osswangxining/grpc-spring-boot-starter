@@ -1,9 +1,12 @@
 package osswangxining.github.io.grpc.autoconfigure;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfigureOrder;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,8 +16,11 @@ import io.grpc.inprocess.InProcessServerBuilder;
 import io.grpc.services.HealthStatusManager;
 import osswangxining.github.io.grpc.GRpcServerBuilderConfigurer;
 import osswangxining.github.io.grpc.GRpcServerRunner;
+import osswangxining.github.io.grpc.annotation.GRpcService;
 
-@Configuration
+@AutoConfigureOrder
+@ConditionalOnBean(annotation = GRpcService.class)
+@EnableConfigurationProperties(GRpcServerProperties.class)
 public class GRpcAutoConfigure {
 	@Autowired
 	private ApplicationContext applicationContext;
